@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --Color-Bg:#222227;
+    --verdesito:#e1fd6f;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: content-box;
+}
+
+body{ 
+    background-color:var(--Color-Bg);
+}
+
+#Acordion label + input[type="radio"]{
+    display: none;
+}
+
+#Acordion .Contenido{
+    padding: 0 10px;
+    line-height: 24px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s;
+}
+
+#Acordion label + input[type="radio"]:checked 
++ .Contenido {
+    max-height: 300px;
+}
