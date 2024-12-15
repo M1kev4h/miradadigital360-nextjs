@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import EtiquetaBF from '@/assets/img/EtiquetaBF.webp'
+import CountDown from '@/Components/CountDown'
 
 function Header() {
   return (
@@ -20,25 +21,7 @@ function Header() {
             <h4 className="text-[15px] text-center text[#1d1d1d] font-bold mb-2
                          md:text-[37px] font-['Squada_One']">¡CAMARAS INTELIGENTES!LA MEJOR OFERTA DEL AÑO 38% OFF!</h4>
             <div className="flex justify-center gap-2">
-            <div>
-                    <h4 className="font-['Squada_One'] text-4xl grid text-center ">00<span className="text-xs text-center">DÍAS</span></h4>
-                </div>
-                <span className="font-['Squada_One'] text-4xl leading-9">:</span>
-
-                <div>
-                    <h4 className="font-['Squada_One'] text-4xl grid text-center ">00<span className="text-xs text-center">HORAS</span></h4>
-                </div>
-                <span className="font-['Squada_One'] text-4xl leading-9">:</span>
-
-                <div>
-                    <h4 className="font-['Squada_One'] text-4xl grid text-center ">00<span className="text-xs text-center">MINUTOS</span></h4>
-                </div>
-                <span className="font-['Squada_One'] text-4xl leading-9">:</span>
-
-                <div>
-                    <h4 className="font-['Squada_One'] text-4xl grid text-center ">00<span className="text-xs text-center">SEGUNDOS</span></h4>
-                </div>
-                
+                <CountDown/>
             </div>
         </article>
         
