@@ -1,6 +1,5 @@
 import Image from "next/image"
 import Link from "next/link"
-import AddCart from "@/assets/icons/AddCart.svg"
 import Whatsapp from "@/assets/icons/Whatsapp.svg"
 import Facebook from "@/assets/icons/Facebook.svg"
 import Instagram from "@/assets/icons/Instagram.svg"
@@ -15,6 +14,11 @@ import Imagen5 from "@/assets/img/Imagen5.webp"
 import Truck from "@/assets/icons/Truck.svg"
 import Shield from "@/assets/icons/Shield.svg"
 import Check from "@/assets/icons/Check.svg"
+import Cart from "@/Components/Cart"
+import AddtoCart from "@/Components/AddtoCart"
+
+
+
 
 export const Hero = () => {
     return (
@@ -40,16 +44,7 @@ export const Hero = () => {
 
                     <ul className="flex  gap-1 -mt-1
                                 ">
-                        <Link href="">
-                            <Image
-                                src={AddCart}
-                                alt="Carito de compras"
-                                width={32}
-                                height={32}
-                                className="size-6 mr-2 -ml-2
-                                            md:size-12 md:mr-4 md:-ml-4">
-                            </Image>
-                        </Link>
+                        <Cart/>
 
                         <Link href="">
                             <Image
@@ -201,12 +196,12 @@ export const Hero = () => {
                         <h1 className="text-white text-5xl">Smart Net Camera V380</h1>
                         <span className="flex gap-4 py-4 text-white">
                             <del>
-                                <span className="font-bold">$3.800,00</span>
+                                <span className="font-bold">$4.116,00</span>
                             </del>
                             <ins className="no-underline">
-                                <span className="text-[#c62a32] font-medium">$2.356,00</span>
+                                <span className="text-[#c62a32] font-medium">$2.990,00</span>
                             </ins>
-                            <span className="bg-[#c62a32] rounded-full py-1 px-2 text-xs font-semibold text-white">38% DTO</span>
+                            <span className="bg-[#c62a32] rounded-full py-1 px-2 text-xs font-semibold text-white">27% DTO</span>
                         </span>
                         <hr />
                         <div className="grid gap-1 py-4 text-white font-extrabold">
@@ -241,7 +236,7 @@ export const Hero = () => {
                         </div>
                         <hr />
                         <h5 className="text-lg text-[#e1fd6f] font-medium py-4">🔥 Si haces tu pedido antes de las 16 hs.. ¡Lo recibes el mismo día!</h5>
-                        <button className="w-full h-10 rounded-2xl bg-[#e1fd6f] hover:bg-[#dafd4c]  text-xl text-[#222227] font-black -tracking-[-.1rem] mt-2 mb-2">Añadir al carrito</button>
+                        <AddtoCart/>
                         <p className="text-white text-normal my-4"> <strong>Cámara de Seguridad WiFi  Protege tu Hogar con Confianza 🏠🔒 </strong> <br />Descubre la tranquilidad que ofrece nuestra cámara de seguridad WiFi. Su instalación es extremadamente sencilla: solo vincúlala a tu celular y colócala donde desees. <br /> <strong>Características Destacadas:</strong> <br /> <strong>Fácil Instalación ⚙:</strong> No necesitas técnicos. En pocos minutos, tendrás tu cámara lista para usar. <br /> <strong>Sin Pagos Mensuales 💸🚫:</strong> Disfruta de seguridad sin cargos recurrentes. Solo realiza un pago único y tendrás tu cámara por mucho tiempo. <br /> <strong>Potente Sirena 🚨:</strong> Disuade a intrusos con una sirena de alta potencia que se activa ante cualquier amenaza. Con esta cámara, disfrutarás de mayor comodidad y confianza al salir de casa. ¡Protege lo que más amas! ❤ </p>
                         <hr />
                         <h5 className="flex justify-between items-center text-white font-bold">¿QUÉ CONTIENE LA CAJA? <span>

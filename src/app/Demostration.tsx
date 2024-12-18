@@ -36,6 +36,7 @@ const Demostration: React.FC = () => {
         title="Doble Lente 🔍📷"
         description="Equipado con dos cámaras en una, una móvil de 360° y una fija, para una cobertura completa."
       />
+
       <div className='justify-end flex
                          md:hidden'>
         <Card
@@ -44,6 +45,7 @@ const Demostration: React.FC = () => {
           description="Con tecnología de infrarrojos y una potente lus LED .No te pierdas ningún detalle."
         />
       </div>
+
       <div className='justify-end hidden
                 md:flex'>
         <Card2
@@ -52,12 +54,15 @@ const Demostration: React.FC = () => {
           description="No solo protege tu casa, sino también tus ahorros y bienes más preciados."
         />
       </div>
+
       <Card
         videoSrc="/Video5.mp4"
         title="Resistente a Climas Extremos ☔🌞"
         description="Diseñada para soportar diversas condiciones climáticas, asegurando su funcionamiento duradero."
       />
-    </ div>
+      
+
+    </div>
   );
 };
 

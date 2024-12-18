@@ -14,8 +14,9 @@
 
 body{ 
     background-color:var(--Color-Bg);
+    
 }
-
+.no-scroll { overflow: hidden; }
 #Acordion label + input[type="radio"]{
     display: none;
 }

@@ -8,7 +8,7 @@ import CheckMarket from '@/assets/icons/Checkmarket.svg'
 function Prefooter() {
     return (
         <section className='pt-32 pb-8'>
-            <main className='justify-evenly h-auto w-full bg-[#e1fd6f] p-4 snap-x
+            <main className='justify-evenly h-auto w-screen bg-[#e1fd6f] p-4 snap-x
                         md:flex'>
                 <div className='grid justify-items-center'>
                     <Image
