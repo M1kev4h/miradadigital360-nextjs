@@ -50,7 +50,7 @@ export const Hero = () => {
                                 ">
                         <Cart/>
 
-                        <Link href="">
+                        <Link target="_blank" href="https://w.app/c4CFi2">
                             <Image
                                 src={Whatsapp}
                                 alt="Carito de compras"
@@ -61,7 +61,7 @@ export const Hero = () => {
                             </Image>
                         </Link>
 
-                        <Link href="">
+                        <Link target="_blank" href="https://www.facebook.com/share/18mrXD7PoX/">
                             <Image
                                 src={Facebook}
                                 alt="Carito de compras"
@@ -72,7 +72,7 @@ export const Hero = () => {
                             </Image>
                         </Link>
 
-                        <Link href="">
+                        <Link target="_blank" href="https://www.instagram.com/todogadgets.uy/profilecard/?igsh=MTE1NTc0M3c1cGhzbg==">
                             <Image
                                 src={Instagram}
                                 alt="Carito de compras"
