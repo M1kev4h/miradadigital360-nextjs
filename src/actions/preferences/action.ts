@@ -5,7 +5,7 @@ import MercadoPagoConfig, { Preference } from "mercadopago";
 import { redirect } from "next/navigation";
 
 export const createPreferece = async (cart: CartItem[]) => {
-  const baseURL = "https://notification-seconds-sky-failed.trycloudflare.com";
+  const baseURL = "  https://hypothesis-small-overcome-customise.trycloudflare.com";
 
   const config = new MercadoPagoConfig({
     accessToken: process.env.ACCESS_TOKEN as string,
