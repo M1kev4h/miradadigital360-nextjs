@@ -1,6 +1,6 @@
 'use client'
 
-import { useCounter } from "./Contextapi/CounterContext";
+import { useCounter } from "./CounterContext";
 const AddtoCart = () => {
   const { increment } = useCounter();
 

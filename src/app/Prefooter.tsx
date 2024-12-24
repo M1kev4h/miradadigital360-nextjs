@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
-import TruckFooter from '@/assets/icons/TruckFooter.svg'
-import Hs from '@/assets/icons/24hs.svg'
-import Grade from '@/assets/icons/Grade.svg'
-import CheckMarket from '@/assets/icons/Checkmarket.svg'
+import TruckFooter from '../../public/assets/icons/TruckFooter.svg'
+import Hs from '../../public/assets/icons/24hs.svg'
+import Grade from '../../public/assets/icons/Grade.svg'
+import CheckMarket from '../../public/assets/icons/Checkmarket.svg'
 
 function Prefooter() {
     return (

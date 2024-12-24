@@ -1,21 +1,25 @@
 import Image from "next/image"
 import Link from "next/link"
-import Whatsapp from "@/assets/icons/Whatsapp.svg"
-import Facebook from "@/assets/icons/Facebook.svg"
-import Instagram from "@/assets/icons/Instagram.svg"
+import Whatsapp from "../../public/assets/icons/Whatsapp.svg"
+import Facebook from "../../public/assets/icons/Facebook.svg"
+import Instagram from "../../public/assets/icons/Instagram.svg"
 import Navbar from "@/Components/CentroNavESC.svg"
-import Star from "@/assets/icons/Star.svg"
-import Down from "@/assets/icons/Down.svg"
-import Portada from "@/assets/img/Portada.webp"
-import Imagen2 from "@/assets/img/Imagen2.webp"
-import Imagen3 from "@/assets/img/Imagen3.webp"
-import Imagen4 from "@/assets/img/Imagen4.webp"
-import Imagen5 from "@/assets/img/Imagen5.webp"
-import Truck from "@/assets/icons/Truck.svg"
-import Shield from "@/assets/icons/Shield.svg"
-import Check from "@/assets/icons/Check.svg"
-import Cart from "@/Components/Cart"
-import AddtoCart from "@/Components/AddtoCart"
+import Star from "../../public/assets/icons/Star.svg"
+import Down from "../../public/assets/icons/Down.svg"
+import Truck from "../../public/assets/icons/Truck.svg"
+import Shield from "../../public/assets/icons/Shield.svg"
+import Check from "../../public/assets/icons/Check.svg"
+import Cart from "@/Components/Contextapi/Cart"
+import AddtoCart from "@/Components/Contextapi/AddtoCart"
+import ImageGallery from "@/Components/ImageGallery"
+const images = [
+    "/assets/img/Portada.webp",
+    "/assets/img/Imagen2.webp",
+    "/assets/img/Imagen3.webp",
+    "/assets/img/Imagen4.webp",
+    "/assets/img/Imagen5.webp",
+  ];
+  
 
 
 
@@ -83,65 +87,9 @@ export const Hero = () => {
                 <div className="grid justify-around
                             md:px-10 md:flex">
                     <aside className="grid gap-10 mt-8">
-                        <article className="w-full  flex justify-center
-                                        md:px-10 md:w-[600px]">
-                            <Image
-                                src={Portada}
-                                alt="Portada"
-                                width={550}
-                                height={550}
-                                className="w-[340px] h-[350px] rounded-2xl
-                                    md:w-[550px] md:h-[550px]">
-                            </Image>
-                        </article>
-
-
-                        <div className="hidden justify-between w-[550px] ml-16
+                        <div className="justify-between w-full md:w-[550px] mr-6 md:ml-16 md:mr-12
                                     md:flex ">
-                            <Image
-                                src={Portada}
-                                alt="Portada"
-                                width={80}
-                                height={80}
-                                className="rounded-2xl
-                                    md:w-[80px] md:h-[80px]">
-                            </Image>
-
-                            <Image
-                                src={Imagen2}
-                                alt="Portada"
-                                width={80}
-                                height={80}
-                                className="rounded-2xl
-                                   md:w-[80px] md:h-[80px]">
-                            </Image>
-
-                            <Image
-                                src={Imagen3}
-                                alt="Portada"
-                                width={80}
-                                height={80}
-                                className="rounded-2xl
-                                    md:w-[80px] md:h-[80px]">
-                            </Image>
-
-                            <Image
-                                src={Imagen4}
-                                alt="Portada"
-                                width={550}
-                                height={550}
-                                className="rounded-2xl
-                                    md:w-[80px] md:h-[80px]">
-                            </Image>
-
-                            <Image
-                                src={Imagen5}
-                                alt="Portada"
-                                width={80}
-                                height={80}
-                                className="rounded-2xl
-                                    md:w-[80px] md:h-[80px]">
-                            </Image>
+                           <ImageGallery images={images} />
                         </div>
                     </aside>
                     <article className="px-4 mt-4">

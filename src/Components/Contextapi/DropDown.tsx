@@ -1,5 +1,5 @@
 import React from 'react'
-import Down from '@/assets/icons/Down.svg'
+import Down from '../../../public/assets/icons/Down.svg'
 import Image from 'next/image'
 
 function DropDown() {

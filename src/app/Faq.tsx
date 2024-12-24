@@ -1,4 +1,4 @@
-import DropDown from '@/Components/DropDown'
+import DropDown from '@/Components/Contextapi/DropDown'
 import React from 'react'
 
 function Faq() {

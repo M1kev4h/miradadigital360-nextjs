@@ -6,7 +6,17 @@ import React, { createContext, useState, useContext,useEffect, ReactNode } from 
 interface CounterContextType {
   count: number;
   increment: () => void;
+  decrement : () => void;
 }
+
+export type CartItem = {
+  product: {
+    id: number;
+    name: string;
+    price: number;
+  };
+  quantity: number;
+};
 
 
 const CounterContext = createContext<CounterContextType | undefined>(undefined);
@@ -30,8 +40,11 @@ useEffect(() => {
   const increment = () => 
     setCount((prev) => prev  + 1);
 
+  const decrement = () => 
+    setCount((prev) => (prev > 0 ? prev - 1 : 0 ));
+
   return (
-    <CounterContext.Provider value={{ count, increment }}>
+    <CounterContext.Provider value={{ count, increment, decrement }}>
       {children}
     </CounterContext.Provider>
   );

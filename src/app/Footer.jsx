@@ -6,8 +6,8 @@ function Footer() {
         <div className='grid gap-4'>
         <h4>Hoy mas de 500 personas ya están usando
         nuestras cámaras inteligentes</h4>
-        <p>Teléfono:</p>
-        <p>Dirección:</p>
+        <p>Teléfono: 092432907</p>
+        <p>Dirección: Uruguay,Canelones,Pando</p>
         <p>Horario:</p>
         </div>
         <hr className='mx-4 my-2' />

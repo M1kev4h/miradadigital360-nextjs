@@ -2,9 +2,9 @@
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import AddCart from "@/assets/icons/AddCart.svg";
+import AddCart from "../../../public/assets/icons/AddCart.svg";
 import ModalCart from './ModalCart';
-import { useCounter } from './Contextapi/CounterContext'; 
+import { useCounter } from './CounterContext'; 
 
 const Cart: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -26,7 +26,7 @@ const Cart: React.FC = () => {
   return (
     <div className='relative inline-block'>
       <button onClick={openModal} className="flex items-center">
-        <span className='absolute top-0 right-2 bg-[#e1fd6f] text-black rounded-full px-2 py-1 text-xs font-bold'>{count}</span>
+        <span className='absolute top-0 right-2 bg-[#e1fd6f] text-black rounded-full px-2 py-1 text-xs font-bold max-sm:scale-50 max-sm:-mx-2 max-sm:-my-1'>{count}</span>
         <Image
           src={AddCart}
           alt="Carrito de compras"
