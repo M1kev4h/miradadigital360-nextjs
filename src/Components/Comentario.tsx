@@ -11,7 +11,8 @@ export const Comentario: React.FC<NewType> = ({ Nombre, Fecha, Comentarios }) =>
   return (
     <section className="text-white rounded-2xl w-[250px] bg-[#1b1b20] ">
       <article className="p-3">
-        <h3 className="text-2xl flex gap-4 font-bold ">{Nombre}<span className="flex gap-1 text-sm mt-2 font-normal items-center">
+        <h3 className="text-xl flex gap-4 font-bold 
+        md:text-2xl">{Nombre}<span className="flex gap-1 text-sm mt-2 font-normal items-center">
           <Image
             src={Verified}
             alt="Verified"

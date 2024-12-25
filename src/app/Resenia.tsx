@@ -14,27 +14,28 @@ export function Resenia() {
             </div>
             <p className='ml-4 text-lg'>3 Reseñas</p> */}
           </article>
-         <div className='flex gap-4'>
-         <Comentario
-            Nombre={'Michael V'}
-            Fecha={'25/12/24'}
-            Comentarios={'¡Entrega rápida! Me llegó al día siguiente, ¡gracias!'} />
+          <div className='grid justify-items-center gap-4 
+                        md:flex '>
+            <Comentario
+              Nombre={'Michael V'}
+              Fecha={'25/12/24'}
+              Comentarios={'¡Entrega rápida! Me llegó al día siguiente, ¡gracias!'} />
 
-          <Comentario
-            Nombre={'Nestor C'}
-            Fecha={'18/12/24'}
-            Comentarios={'Exelente Calidad de Imagen Estoy muy contento,le  hablarle a mis perros a por  la cámara hasta parlantes tiene .'} />
+            <Comentario
+              Nombre={'Nestor C'}
+              Fecha={'18/12/24'}
+              Comentarios={'Exelente Calidad de Imagen Estoy muy contento,le  hablarle a mis perros a por  la cámara hasta parlantes tiene .'} />
 
-          <Comentario
-            Nombre={'Fernando'}
-            Fecha={'8/12/24'}
-            Comentarios={'Buen Flash Llego rápido y tiene un tremendo flash; quité un foco que tenía y con la luz de la cámara es ya esta.'} />
+            <Comentario
+              Nombre={'Fernando'}
+              Fecha={'8/12/24'}
+              Comentarios={'Buen Flash Llego rápido y tiene un tremendo flash; quité un foco que tenía y con la luz de la cámara es ya esta.'} />
 
-          <Comentario
-            Nombre={'Valeria P'}
-            Fecha={'4/12/24'}
-            Comentarios={'La cámara llegó rápido y tiene una buena visión en la noche, ¡muy satisfecha!'} />
-         </div>
+            <Comentario
+              Nombre={'Valeria P'}
+              Fecha={'4/12/24'}
+              Comentarios={'La cámara llegó rápido y tiene una buena visión en la noche, ¡muy satisfecha!'} />
+          </div>
         </main>
       </div>
     </section>
