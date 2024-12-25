@@ -37,7 +37,7 @@ const ModalCart: React.FC<ModalCartProps> = ({ closeModal }) => {
   return (
     <section className="bg-black/80 fixed z-[60] size-screen -inset-20 max-sm:-inset-0 flex items-center justify-end text-white">
       <main className="bg-[#222227] p-4 rounded-tl-2xl rounded-bl-2xl h-full w-[320px] max-sm:w-screen ">
-        <div className="flex justify-between items-center mt-32 mb-4">
+        <div className="flex justify-between items-center mt-16 mb-4 max-sm:pt-32">
           <h1 className="-tracking-[-.05rem] font-medium">Carrito</h1>
           <button
             className="font-bold text-xl"
