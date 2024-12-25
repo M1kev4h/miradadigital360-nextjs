@@ -12,7 +12,7 @@ const CountDown: React.FC = () => {
   useEffect(() => {
     const targetDate = new Date();
     targetDate.setMonth(11);
-    targetDate.setDate(25);
+    targetDate.setDate(31);
     targetDate.setHours(0, 0, 0, 0);
 
     const interval = setInterval(() => {

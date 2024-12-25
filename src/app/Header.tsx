@@ -13,7 +13,7 @@ function Header() {
     className="absolute size-10 
                   md:size-28" />
     */}
-    <main className='bg-[#e1fd6f] grid w-full h-[1fr]'>
+    <main className='bg-[#e1fd6f] grid w-screen h-[1fr]'>
         <article className="flex-nowrap py-4 
                             md:flex 
                             md:justify-center

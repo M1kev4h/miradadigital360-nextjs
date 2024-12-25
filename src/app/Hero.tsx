@@ -1,6 +1,5 @@
 import Image from "next/image"
 import Link from "next/link"
-import Whatsapp from "../../public/assets/icons/Whatsapp.svg"
 import Facebook from "../../public/assets/icons/Facebook.svg"
 import Instagram from "../../public/assets/icons/Instagram.svg"
 import Navbar from "@/Components/CentroNavESC.svg"
@@ -49,18 +48,6 @@ export const Hero = () => {
                     <ul className="flex  gap-1 -mt-1
                                 ">
                         <Cart/>
-
-                        <Link target="_blank" href="https://w.app/c4CFi2">
-                            <Image
-                                src={Whatsapp}
-                                alt="Carito de compras"
-                                width={32}
-                                height={32}
-                                className="size-4 mt-1.5
-                                            md:mt-3 md:size-8">
-                            </Image>
-                        </Link>
-
                         <Link target="_blank" href="https://www.facebook.com/share/18mrXD7PoX/">
                             <Image
                                 src={Facebook}
