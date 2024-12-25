@@ -9,10 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@svgr/webpack": "^8.1.0",
     "cors": "^2.8.5",
     "express": "^4.21.2",
     "mercadopago": "^2.1.0",
-    "next": "15.1.0",
+    "next": "^15.1.1-canary.19",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
