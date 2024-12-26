@@ -14,7 +14,7 @@ export function Resenia() {
             </div>
             <p className='ml-4 text-lg'>3 Reseñas</p> */}
           </article>
-          <div className='grid justify-items-center gap-4 
+          <div className='w-screen grid justify-items-center gap-4 
                         md:flex '>
             <Comentario
               Nombre={'Michael V'}

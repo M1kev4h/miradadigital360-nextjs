@@ -4,13 +4,13 @@ import Facebook from "../../public/assets/icons/Facebook.svg"
 import Instagram from "../../public/assets/icons/Instagram.svg"
 import Navbar from "@/Components/CentroNavESC.svg"
 import Star from "../../public/assets/icons/Star.svg"
-import Down from "../../public/assets/icons/Down.svg"
 import Truck from "../../public/assets/icons/Truck.svg"
 import Shield from "../../public/assets/icons/Shield.svg"
 import Check from "../../public/assets/icons/Check.svg"
 import Cart from "@/Components/Contextapi/Cart"
 import AddtoCart from "@/Components/Contextapi/AddtoCart"
 import ImageGallery from "@/Components/ImageGallery"
+import { FAQ } from "@/Components/Question";
 const images = [
     "/assets/img/Portada.webp",
     "/assets/img/Imagen2.webp",
@@ -20,7 +20,17 @@ const images = [
   ];
   
 
+const questions = [
 
+     {
+        question: "¿QUÉ CONTIENE LA CAJA?",
+        answer: `1x bolsa de tornillos 
+                1x cámara PTZ 
+                1x manual de usuario 
+                1x Fuente de alimentación 
+                1x tapas impermeables`},
+    
+]
 
 
 export const Hero = () => {
@@ -174,15 +184,7 @@ export const Hero = () => {
                         <AddtoCart/>
                         <p className="text-white text-normal my-4"> <strong>Cámara de Seguridad WiFi  Protege tu Hogar con Confianza 🏠🔒 </strong> <br />Descubre la tranquilidad que ofrece nuestra cámara de seguridad WiFi. Su instalación es extremadamente sencilla: solo vincúlala a tu celular y colócala donde desees. <br /> <strong>Características Destacadas:</strong> <br /> <strong>Fácil Instalación ⚙:</strong> No necesitas técnicos. En pocos minutos, tendrás tu cámara lista para usar. <br /> <strong>Sin Pagos Mensuales 💸🚫:</strong> Disfruta de seguridad sin cargos recurrentes. Solo realiza un pago único y tendrás tu cámara por mucho tiempo. <br /> <strong>Potente Sirena 🚨:</strong> Disuade a intrusos con una sirena de alta potencia que se activa ante cualquier amenaza. Con esta cámara, disfrutarás de mayor comodidad y confianza al salir de casa. ¡Protege lo que más amas! ❤ </p>
                         <hr />
-                        <h5 className="flex justify-between items-center text-white font-bold">¿QUÉ CONTIENE LA CAJA? <span>
-                            <Image
-                                src={Down}
-                                alt="flecha abajo"
-                                width={32}
-                                height={32}
-                                className="py-2 -mb-1">
-                            </Image>
-                        </span></h5>
+                        <FAQ questions={questions}/>
                         <hr />
                     </article>
                 </div>
