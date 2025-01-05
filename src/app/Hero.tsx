@@ -153,7 +153,7 @@ export const Hero = () => {
                             </Image>
                         </div>
 
-                        <h1 className="text-white text-5xl">Smart Net Camera V380</h1>
+                        <h1 className="text-white text-5xl">Smart Net Camara V380</h1>
                         <span className="flex gap-4 py-4 text-white">
                             <del>
                                 <span className="font-bold">$4.116,00</span>
