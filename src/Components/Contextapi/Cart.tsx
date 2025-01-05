@@ -1,26 +1,18 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import AddCart from "../../../public/assets/icons/AddCart.svg";
 import ModalCart from './ModalCart';
 import { useCounter } from './CounterContext'; 
 
-const Cart: React.FC = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+interface CartProps {
+  isModalOpen: boolean;
+  openModal: () => void;
+  closeModal: () => void;
+}
 
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
-
-  useEffect(() => {
-    if (isModalOpen) {
-      document.body.classList.add('no-scroll');
-    } else {
-      document.body.classList.remove('no-scroll');
-    }
-    return () => document.body.classList.remove('no-scroll');
-  }, [isModalOpen]);
-
+const Cart: React.FC<CartProps> = ({ isModalOpen, openModal, closeModal }) => {
   const { count } = useCounter();
 
   return (

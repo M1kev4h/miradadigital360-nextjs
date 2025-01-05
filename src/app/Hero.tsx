@@ -1,3 +1,5 @@
+"use client"
+import React,{useState,useEffect} from "react";
 import Image from "next/image"
 import Link from "next/link"
 import Facebook from "../../public/assets/icons/Facebook.svg"
@@ -34,6 +36,19 @@ const questions = [
 
 
 export const Hero = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+    return () => document.body.classList.remove('no-scroll');
+  }, [isModalOpen]);
+
     return (
         <section className="flex justify-center mt-8">
             <main className="w-screen h-auto bg-[#d9d9d9]/10 rounded-tl-[25px] rounded-tr-[25px] shadow-inner border border-[#f8f8f8]/25 backdrop-blur-[186.93px] md:w-[1395px]">
@@ -57,7 +72,7 @@ export const Hero = () => {
 
                     <ul className="flex  gap-1 -mt-1
                                 ">
-                        <Cart/>
+                        <Cart isModalOpen={isModalOpen} openModal={openModal} closeModal={closeModal}/>
                         <Link target="_blank" href="https://www.facebook.com/share/18mrXD7PoX/">
                             <Image
                                 src={Facebook}
@@ -181,7 +196,7 @@ export const Hero = () => {
                         </div>
                         <hr />
                         <h5 className="text-lg text-[#e1fd6f] font-medium py-4">🔥 Si haces tu pedido antes de las 16 hs.. ¡Lo recibes el mismo día!</h5>
-                        <AddtoCart/>
+                        <AddtoCart openModal={openModal}/>
                         <p className="text-white text-normal my-4"> <strong>Cámara de Seguridad WiFi  Protege tu Hogar con Confianza 🏠🔒 </strong> <br />Descubre la tranquilidad que ofrece nuestra cámara de seguridad WiFi. Su instalación es extremadamente sencilla: solo vincúlala a tu celular y colócala donde desees. <br /> <strong>Características Destacadas:</strong> <br /> <strong>Fácil Instalación ⚙:</strong> No necesitas técnicos. En pocos minutos, tendrás tu cámara lista para usar. <br /> <strong>Sin Pagos Mensuales 💸🚫:</strong> Disfruta de seguridad sin cargos recurrentes. Solo realiza un pago único y tendrás tu cámara por mucho tiempo. <br /> <strong>Potente Sirena 🚨:</strong> Disuade a intrusos con una sirena de alta potencia que se activa ante cualquier amenaza. Con esta cámara, disfrutarás de mayor comodidad y confianza al salir de casa. ¡Protege lo que más amas! ❤ </p>
                         <hr />
                         <FAQ questions={questions}/>
