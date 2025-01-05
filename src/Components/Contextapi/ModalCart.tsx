@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { createPortal } from "react-dom";
 import { useCounter } from "./CounterContext"; 
 import Image from "next/image";
 import CamaraChiquita from "../../../public/assets/img/CamaraChiquita.png";
@@ -16,14 +17,12 @@ interface ModalCartProps {
 const ModalCart: React.FC<ModalCartProps> = ({ closeModal }) => {
   const { count, increment, decrement } = useCounter(); 
 
-  
   const product = {
     id: 1,
     name: "Smart Net Camera V380",
     price: pricePerItem,
   };
 
-  
   const cart = [
     {
       product,
@@ -31,19 +30,16 @@ const ModalCart: React.FC<ModalCartProps> = ({ closeModal }) => {
     },
   ];
 
-  
   const calculateTotal = () => count * pricePerItem;
 
-  return (
-    <section className="bg-black/80 fixed z-[60] size-screen -inset-20 max-sm:-inset-0 flex items-center justify-end text-white">
-      <main className="bg-[#222227] p-4 rounded-tl-2xl rounded-bl-2xl h-full w-[320px] max-sm:w-screen ">
+  // Renderizamos el modal usando un portal
+  return createPortal(
+    <section className="bg-black/80 fixed z-[60] inset-0 flex items-center justify-end text-white">
+      <main className="bg-[#222227] p-4 rounded-tl-2xl rounded-bl-2xl h-full w-[320px] max-sm:w-screen">
         <div className="flex justify-between items-center mt-16 mb-4 max-sm:pt-32">
           <h1 className="-tracking-[-.05rem] font-medium">Carrito</h1>
-          <button
-            className="font-bold text-xl"
-            onClick={closeModal}
-          >
-            ×
+          <button className="font-bold text-xl" onClick={closeModal}>
+            X
           </button>
         </div>
 
@@ -112,9 +108,9 @@ const ModalCart: React.FC<ModalCartProps> = ({ closeModal }) => {
           </button>
         </form>
       </main>
-    </section>
+    </section>,
+    document.body // Renderizamos el modal en el body
   );
 };
 
 export default ModalCart;
-
