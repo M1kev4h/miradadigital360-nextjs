@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+div:empty {
+    display: none;
+  }
+  
 :root{
     --Color-Bg:#222227;
     --verdesito:#e1fd6f;
@@ -33,3 +37,4 @@ body{
 + .Contenido {
     max-height: 300px;
 }
+

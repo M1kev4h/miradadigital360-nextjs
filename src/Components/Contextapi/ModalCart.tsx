@@ -32,7 +32,7 @@ const ModalCart: React.FC<ModalCartProps> = ({ closeModal }) => {
 
   const calculateTotal = () => count * pricePerItem;
 
-  // Renderizamos el modal usando un portal
+  
   return createPortal(
     <section className="bg-black/80 fixed z-[60] inset-0 flex items-center justify-end text-white">
       <main className="bg-[#222227] p-4 rounded-tl-2xl rounded-bl-2xl h-full w-[320px] max-sm:w-screen">
@@ -109,7 +109,7 @@ const ModalCart: React.FC<ModalCartProps> = ({ closeModal }) => {
         </form>
       </main>
     </section>,
-    document.body // Renderizamos el modal en el body
+    document.body 
   );
 };
 
